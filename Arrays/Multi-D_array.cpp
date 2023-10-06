@@ -12,7 +12,7 @@ int main(){
    
     for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
-            cout<<"Enter the Element for arr2["<<i<<"]["<<j<<"]";
+            cout<<"Enter the Element for arr2["<<i<<"]["<<j<<"]: ";
             cin>>element;
             arr3[i][j]=element;
         }
