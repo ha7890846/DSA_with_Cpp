@@ -38,19 +38,31 @@ int main()
     cin >> n;
     vector<int> sameNum(n, -5); // here we can put any Int num directly...
     printVec(sameNum);
-    // it can also be done with fill() fn..
+    // it can also be done with fill() fn..But this fn is used with limiting location(from to upto.)
     vector<int> same2(n);
     int value;
     cout << "\nEnter the value for the vec:";
     cin >> value;
-    fill(same2.begin(), same2.end(), value);
-    printVec(same2);
+    if(n>1){
+        //it would insert value into vect from 1st index to last indx..
+        fill(same2.begin()+1, same2.end(), value);
+        printVec(same2);
+    }else{
+        cout<<"Length of vector is lower than 1.";
+    }
     printStar();
 
     // Initialize vec from an array...
     int arr[] = {1, 2, 3, 4, 5};
     int size_arr = sizeof(arr) / sizeof(arr[0]);
-    vector<int> arrVec(arr, arr + size_arr);
+    cout<<"Printing the initialized array:";
+    for(int i=0;i<size_arr;i++){
+        //printing array..
+        cout<<arr[i]<<", ";
+    }
+    cout<<endl;
+    //Here we can provided the location by index to copy from to upto lacation...
+    vector<int> arrVec(arr+1, arr + size_arr);
     cout << "printing Vec from array:";
     printVec(arrVec);
     printStar();
@@ -61,8 +73,8 @@ int main()
     printVec(vec1);
     printStar();
 
-    // Initilize vec from another vec...
-    vector<int> copyVec(sameNum.begin(), sameNum.end());
+    // Initilize vec from another vec...location can be specified..
+    vector<int> copyVec(sameNum.begin()+1, sameNum.end());
     cout << "printing copied array from another vec:";
     printVec(copyVec);
     printStar();
