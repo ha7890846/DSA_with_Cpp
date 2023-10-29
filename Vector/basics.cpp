@@ -4,6 +4,17 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+void printStar()
+{
+    int star = 20;
+    cout << endl;
+    while (star)
+    {
+        cout << "* * ";
+        star--;
+    }
+    cout << endl;
+}
 int main()
 {
     // initialize vector to int type, int takes 4-bytes
@@ -38,17 +49,12 @@ int main()
     cout << "\nThe size of brr is: " << brr.size() << " and the capacity is: " << brr.capacity();
     cout << "\nThe size of brr is: " << crr.size() << " and the capacity is: " << crr.capacity();
     cout << endl;
-    int star = 10;
-    while (star)
-    {
-        cout << "* * ";
-        star--;
-    }
+    printStar();
 
     // Adding some basic stl fn of vector...
     // Iterator on vector...........
+    cout << "\n\t*Some Useful iterator Vector Member function.*";
     vector<int> g1;
-
     for (int i = 1; i <= 5; i++)
         g1.push_back(i);
 
@@ -67,13 +73,11 @@ int main()
     cout << "\nOutput of crbegin and crend : ";
     for (auto ir = g1.crbegin(); ir != g1.crend(); ++ir)
         cout << *ir << " ";
+    cout << endl;
+    printStar();
 
-    // Adding more usefull stl Size and capacity ..
-    while (star)
-    {
-        cout << "* * ";
-        star--;
-    }
+    // Adding more usefull stl Size and capacity .
+    cout << "\n\t*Here The Size and Capacity function*" << endl;
     cout << "\nSize : " << g1.size();
     cout << "\nCapacity : " << g1.capacity();
     cout << "\nMax_Size : " << g1.max_size() << endl;
@@ -95,12 +99,11 @@ int main()
     cout << "\nVector elements are: ";
     for (auto it = g1.begin(); it != g1.end(); it++)
         cout << *it << " ";
+    cout << endl;
+    printStar();
+
     // operation to access element..
-    while (star)
-    {
-        cout << "* * ";
-        star--;
-    }
+    cout << "\n\t*HERE the Accessign of element fn*" << endl;
     cout << "\nReference operator for vector g1 : g1[2] = " << g1[2];
 
     cout << "\nElement at 3rd index : g1.at(3)  = " << g1.at(3);
@@ -111,24 +114,33 @@ int main()
 
     // pointer to the first element
     int *pos = g1.data();
-
-    cout << "\nThe first element is " << *pos;
+    cout << "\nThe first element is " << *pos << endl;
+    printStar();
 
     // Modifying Element....
-    while (star)
-    {
-        cout << "* * ";
-        star--;
-    }
     // Assign vector
+    cout << "\n\t*Here we are work with Modify Member fn*" << endl;
     vector<int> v;
+    vector<int> sum{1, 2, 35, 6, 4, 7};
+    cout << "The vector sum contents:";
+    for (int i = 0; i < sum.size(); i++)
+    {
+        cout << sum[i] << ", ";
+    }
+    // fill the vector with 10 five times....assign fn works to change contents the old ones of vector
+    // it will assign 10 as five times...
+    sum.assign(5, 10);
 
-    // fill the vector with 10 five times
-    v.assign(5, 10);
-
-    cout << "The vector elements are: ";
-    for (int i = 0; i < v.size(); i++)
-        cout << v[i] << " ";
+    cout << "\nThe Sum elements after assign fn: ";
+    for (int i = 0; i < sum.size(); i++)
+        cout << sum[i] << " ";
+    // now again change the vector element usign assign..
+    sum.assign({23, 57, 89, 85, 590, 93, 33});
+    cout << "\nAgain Sum elements after again assign:";
+    for (auto v : sum)
+    {
+        cout << v << ", ";
+    }
 
     // inserts 15 to the last position
     v.push_back(15);
