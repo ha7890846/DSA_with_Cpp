@@ -59,11 +59,15 @@ int main()
         g1.push_back(i);
 
     cout << "\nOutput of begin and end: ";
-    for (auto i = g1.begin(); i != g1.end(); ++i)
+    for (auto i = g1.begin()+0; i != g1.end()-0; ++i)
+    // In above loop... 0 is defined to the index.
         cout << *i << " ";
 
     cout << "\nOutput of cbegin and cend: ";
-    for (auto i = g1.cbegin(); i != g1.cend(); ++i)
+    for (auto i = g1.cbegin()+0; i != g1.cend()-0; ++i)
+    //below line of code through an error, due to the const_iterator.
+    // It wouldn't allow to change in element... 
+    //      *i+=1;         
         cout << *i << " ";
 
     cout << "\nOutput of rbegin and rend: ";
