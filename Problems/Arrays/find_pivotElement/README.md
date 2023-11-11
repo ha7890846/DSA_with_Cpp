@@ -3,10 +3,6 @@
 Pivot :
 Pivot is these Element which break monotonic order in fully Array,
 it may be lowest or hightest number in Two Sorted Array.
-## Demo
-
-https://dev-habibshah.netlify.app/
-
 
 ## Running Tests
 
