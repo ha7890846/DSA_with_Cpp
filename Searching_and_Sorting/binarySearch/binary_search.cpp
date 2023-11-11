@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 #include<vector>
 using namespace std;
 //time complexity of Binary Search:O(log n);
@@ -13,7 +14,7 @@ int binarySearch(vector<int>vect,int target){
         return e;
     }
     s=0;e=vect.size();
-    
+
     while(s<=e){
         // Taken mid as ceiling value...
             int mid=s+(e-s)/2;
@@ -38,12 +39,17 @@ int main(){
     cout<<"Enter the size of Array:\t";
     cin>>n;
     vector<int>arr(n);
-    cout<<"plzz Enter the element in monotonic order"<<endl;
-        // Monotonic means-- in order of increasing or decreasing;
     for(int i=0;i<arr.size();i++){
         cout<<"Enter the Element for array["<<i<<"]th index:";
         cin>>arr[i];
     }
+    // using Sort Stl because Binary Search work over sorted array...
+    sort(arr.begin(),arr.end());
+    cout<<"Your Array after Sorting:";
+    for(auto v:arr){
+        cout<<v<<", ";
+    }
+    cout<<endl;
     int key;
     cout<<"Enter the Target value to find:";
     cin>>key;
