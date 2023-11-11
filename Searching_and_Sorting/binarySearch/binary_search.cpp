@@ -3,14 +3,22 @@
 using namespace std;
 //time complexity of Binary Search:O(log n);
 int binarySearch(vector<int>vect,int target){
-    int s,e;
     // Here S & E is point to starting index and LastEle Index in-order....
+    int s,e;
+        //best case Scenario...
+    if(vect[s]==target){
+        return s;
+    }
+    if(vect[e]==target){
+        return e;
+    }
     s=0;e=vect.size();
+    
     while(s<=e){
         // Taken mid as ceiling value...
-        int mid=s+(e-s)/2;
-    //  To avoid below problem, we use mid =s+(e-s)/2 instead of mid=s+e/2;
-    //if value of start or end or both is INT_MAX, it will cause integer overflow.
+            int mid=s+(e-s)/2;
+        //  To avoid below problem, we use mid =s+(e-s)/2 instead of mid=s+e/2;
+        // i f value of start or end or both is INT_MAX, it will cause integer overflow.
         if(vect[mid]==target){
             return  mid;
         }
