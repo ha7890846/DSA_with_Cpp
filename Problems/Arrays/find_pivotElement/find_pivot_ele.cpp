@@ -30,7 +30,7 @@ int main(){
     cout<<"Enter the size of array:";
     cin>>n;
     vector<int>arr(n);
-    cout<<"\t******* Enter the two sub-array as monotonic.(Like-6,7,8,9,0,1,2) ********"<<endl;
+    cout<<"\t******* Enter the two sub-array as rotated Array.(Like-6,7,8,9,0,1,2) ********"<<endl;
     for(int i=0;i<n;i++){
         cout<<"Enter the Element value:";
         cin>>arr[i];
