@@ -10,20 +10,25 @@ int firstOccurance(int arr[], int size, int target)
     int first_occur=-1;
     while (s <= e)
     {
+        //Extreme best case..
+        if(arr[s]==target){
+            return s;
+        }
         int mid = s + (e - s) / 2;
         if (arr[mid] == target)
         {
             first_occur= mid;
-            e=mid-1;
+            // e=mid-1;     this term is used in to else case....
         }
-        if (arr[mid] > target)
+        // Normal Binary Search logic....
+        if (arr[mid] < target)
         {
-            // Goto left Sub Array..
-            e = mid - 1;
+            // Goto left Sub Array.
+            s = mid + 1;
         }
         else
         {
-            s = mid + 1;
+            e = mid - 1;
         }
     }
     return first_occur;
@@ -36,11 +41,15 @@ int lastOccurance(int arr[], int size, int target)
     int last_occur=-1;
     while (s <= e)
     {
+        //Extreme Best case 
+        if(arr[e]==target){
+            return e;
+        }
         int mid = s + (e - s) / 2;
         if (arr[mid] == target)
         {
             last_occur= mid;
-            s=mid+1;
+            // s=mid+1;         this term will be apply in else case... 
         }
         // Normal Binary Search Logic....
         if (arr[mid] > target)
