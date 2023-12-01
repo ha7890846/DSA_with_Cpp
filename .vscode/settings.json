@@ -3,5 +3,20 @@
     "files.associations": {
         "iostream": "cpp"
     },
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "vscode",
+            "username": "root",
+            "database": "college_info"
+        }
+    ]
 }
