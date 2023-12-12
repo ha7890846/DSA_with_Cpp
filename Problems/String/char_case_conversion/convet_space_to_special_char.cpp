@@ -15,6 +15,6 @@ int main(){
             quote[i] = '@';
         }
     }
-    cout<<quote<<endl;
+    cout<<"The Result:"<<quote<<endl;
     return 0;
 }
