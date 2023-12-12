@@ -6,7 +6,7 @@ int main(){
     char quote[100];
     cout<<"Enter Your characters length: ";
     cin>>length;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); //clear buffer before taking new input...
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); //clear buffer before taking new line...
     cout<<"Enter your sentense:";
     cin.getline(quote,length);
     cout<<quote<<endl;
