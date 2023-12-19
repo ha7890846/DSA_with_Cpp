@@ -2,6 +2,7 @@
 #include<limits>
 using namespace std;
 int main(){
+    // Operator Method: 
     string str1 = "charlie";
     string str2 = "habib";
     if(str1!=str2){
@@ -27,9 +28,9 @@ int main(){
     cout<<"enter your name 2";
     cin>>name2;
     if(name1!=name2){
-        cout<<"wrong name"<<endl;
+        cout<<"Not Equal name 1& name2"<<endl;
     }else{
-        cout<<"valid";
+        cout<<"Both are Equal name1 & name2";
     }
     string student="charlie";
     string student1="Charlie";
