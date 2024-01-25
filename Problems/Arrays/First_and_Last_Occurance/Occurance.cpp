@@ -10,10 +10,6 @@ int firstOccurance(int arr[], int size, int target)
     int first_occur=-1;
     while (s <= e)
     {
-        //Extreme best case..
-        if(arr[s]==target){
-            return s;
-        }
         int mid = s + (e - s) / 2;
         if (arr[mid] == target)
         {
@@ -41,10 +37,6 @@ int lastOccurance(int arr[], int size, int target)
     int last_occur=-1;
     while (s <= e)
     {
-        //Extreme Best case 
-        if(arr[e]==target){
-            return e;
-        }
         int mid = s + (e - s) / 2;
         if (arr[mid] == target)
         {
