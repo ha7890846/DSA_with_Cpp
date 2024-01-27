@@ -1,4 +1,5 @@
 // program for factorial small number from 0 to 12..
+// it may be compiler dependent..
 #include<iostream>
 using namespace std;
 long long facto(int number){
