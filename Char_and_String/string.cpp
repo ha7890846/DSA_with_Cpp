@@ -76,8 +76,30 @@ int main()
 
 
     cout << "\n\n\t\t\t\t\t* Modification Function * " << endl;
+    string str= "you are ";
+    string str2="Writing ";
+    string str3="print 10 and then 5 more";
+
+    // used in the same order as described above:
+    str.append(str2);                       // "Writing "
     
+    str.append(str3,6,3);                   // "10 "
+    str.append("here: ");                   // "here: "
+    str.append(10,'.');                    // ".........."
+    str.append(str3.begin()+9,str3.end());  // "and then 5 more"
+    cout<<str<<endl;
+
+
+    // Assign funciton...
+    string old_quote = "coding is love";
+    string new_quote;
+    new_quote.assign(old_quote,7,2);
+    cout<<"new quote after:limited element: "<<new_quote<<endl;
+    new_quote.assign(old_quote.begin()+2,old_quote.end()-1);
+    cout<<"new quote from iterator copyied: "<<new_quote<<endl;
+    // insert funtion......
     
-    
+
+
     return 0;
 }
