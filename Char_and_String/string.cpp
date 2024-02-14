@@ -1,9 +1,6 @@
-#include <iostream>
-#include <string> // for string function.
+#include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-
+void initialization(){
     // string initialization ...........
     cout << "\n\n\t\t\t\t\t* Initialization * " << endl;
     string str1(10, 'a');
@@ -21,7 +18,10 @@ int main()
     getline(cin, name);
     cout << "Your name is : " << name << endl;
 
+}
 
+
+void traversing(){
     cout << "\n\n\t\t\t\t\t* Traversing Technique * " << endl;
     string quote = "Coding is Love";
     int n = quote.length();
@@ -40,8 +40,9 @@ int main()
     //  the last and first char in string ...
     cout<<"the first char in quote is: "<<quote.front()<<endl;
     cout<<"Ther last char in quote is: "<< quote.back() << endl;
+}
 
-
+void iterators(){
     cout << "\n\n\t\t\t\t\t* Iterators Function * " << endl;
     string college = "Prem prakash";
     string::iterator itr;
@@ -74,7 +75,8 @@ int main()
     } 
     cout<<endl;
 
-
+}
+void modification(){
     cout << "\n\n\t\t\t\t\t* Modification Function * " << endl;
     string str= "you are ";
     string str2="Writing ";
@@ -97,9 +99,44 @@ int main()
     cout<<"new quote after:limited element: "<<new_quote<<endl;
     new_quote.assign(old_quote.begin()+2,old_quote.end()-1);
     cout<<"new quote from iterator copyied: "<<new_quote<<endl;
-    // insert funtion......
     
+    
+    // insert funtion......
+    str="to be question";
+    str2="the ";
+    str3="or not to be";
+    string::iterator it;
 
+    str.insert(6,str2);                 // to be (the )question
+    str.insert(10,"to be ");            // to be not (to be )that is the question
+    str.insert(10,"that is cool",8);    // to be not (that is )the question
+    str.insert(6,str3,3,4);             // to be (not )the question
+    str.insert(14,1,':');               // to be not to be(:) that is the question
+    str.insert (str.end(),3,'.');       // to be, not to be: that is the question(...)
+    it = str.begin()+5;
+    str.insert(it,',');
+    str.insert(it+1,str3.begin(),str3.begin()+2);
+    cout<<"Final string is: "<<str<<endl;
+}
 
+int main()
+{
+    int n;
+    cout<<"choose any operation by num:"<<endl;
+    cout<<"1. Initialization.\n2. traversing. \n3. iterators.\n4. modification"<<endl;
+    cout<<"Enter operation Num: ";
+    cin>>n;
+    switch(n){
+        case 1:
+        initialization();
+        case 2:
+        traversing();
+        case 3:
+        iterators();
+        case 4:
+        modification();
+        default:
+        cout<<"Enter valid operation Num."<<endl;
+    }
     return 0;
 }
