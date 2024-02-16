@@ -12,8 +12,11 @@ long long powerValue(int n, int p){
 }
 int main(){
     int num,power;
-    cout<<"Enter the num and power: ";
-    cin>>num>> power;
-    cout<<powerValue(num,power);
+    cout<<"Enter the num: ";
+    cin>>num;
+    
+    cout<<"Enter the expo of num: ";
+    cin>> power;
+    cout<<"The value of "<<num<<" to the power "<<power<<" is: "<<powerValue(num,power);
     return 0;
 }
