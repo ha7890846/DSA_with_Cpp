@@ -27,6 +27,8 @@ The integers used in this program are assumed to be within the range of a 32-bit
 - The program uses a recursive approach to calculate the factorial, which may lead to stack overflow for large input values.
 - Ensure that the input integer is non-negative as factorial is not defined for negative integers.
 - Modifications or enhancements can be made to handle edge cases or improve efficiency based on specific requirements or use cases.
+
+![Logo](https://github.com/ha7890846/DSA_with_Cpp/blob/main/Recursion/recursion.jpg)
 ## Running Tests
 
 To run tests, run the following command
