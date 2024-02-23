@@ -1,12 +1,12 @@
-#include<iostream>
-using namespace std;
-int main(){
-    for(int i =0;i<10;i++){
-        cout<<"hello chalrie\n";
-        for(int j=0;j<10;j++){
-            cout<<"hleo coder life\n.";
-        }
 
-    }
+#include <iostream>
+#include<typeinfo>
+using namespace std;
+int main()
+{
+    int a = 10;
+    float b = float(a);
+    cout<<b<<endl;
+    cout<<typeid(b).name()<<endl;
     return 0;
 }
