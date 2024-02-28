@@ -21,5 +21,5 @@ sorted_arr = [ 5, 6, 7, 11, 12, 13];
 
 ## Screenshots
 
-![App Screenshot](https://github.com/ha7890846/DSA_with_Cpp/blob/main/diagram/QuickSort2.png)
+![Diagram: ](https://github.com/ha7890846/DSA_with_Cpp/blob/main/diagram/QuickSort2.png)
 
