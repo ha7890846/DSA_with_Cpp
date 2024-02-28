@@ -13,13 +13,13 @@ Merge sort is a highly efficient sorting algorithm that follows the divide-and-c
 ## Implementation
 
 The merge sort algorithm can be implemented in various programming languages.
+## Screenshots
+
+![Diagram: ](https://github.com/ha7890846/DSA_with_Cpp/blob/main/diagram/QuickSort2.png)
+
 
 ```Cpp
 # Example usage
 arr = [12, 11, 13, 5, 6, 7]
 sorted_arr = [ 5, 6, 7, 11, 12, 13];
-
-## Screenshots
-
-![Diagram: ](https://github.com/ha7890846/DSA_with_Cpp/blob/main/diagram/QuickSort2.png)
 
