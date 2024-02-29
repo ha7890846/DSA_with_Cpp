@@ -14,7 +14,7 @@ Selection sort is a simple comparison-based sorting algorithm. It works by divid
 ## Implementation
 
 The selection sort algorithm can be implemented in various programming languages.
-![Diagram: ]{https://github.com/ha7890846/DSA_with_Cpp/blob/main/diagram/Selection-Sort-Flowhchart.png}
+![Diagram: ](https://github.com/ha7890846/DSA_with_Cpp/blob/main/diagram/Selection-Sort-Flowhchart.png)
 
 
 ```bash 
