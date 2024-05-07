@@ -15,7 +15,7 @@ void bubbleSort(vector<int>&arr){
 }
 
 int main(){
-    vector<int>arr{3,24,31,1,37,7,5,43,53,1,79,64,45};    
+    vector<int>arr{232,323,23,235,342,8,892,43,23,45,234,43,434,234,0,48910,20,234};    
     cout<<"\nThe Original Array is: ";
     for(auto v:arr){
         cout<<v<<", ";
