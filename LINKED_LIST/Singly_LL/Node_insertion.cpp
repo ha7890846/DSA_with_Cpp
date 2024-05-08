@@ -68,6 +68,8 @@ void insertAtPosition(Node* &head,int data,int position){
     }else if(position == size){
         return insertAtTail(head,data);
     }
+
+    
     int count = 1;
     Node* prevNode = head;
     // when List is empty......
@@ -105,7 +107,7 @@ int main(){
     insertAtTail(head,50);
     insertAtHead(head,90);
     printList(head);
-    insertAtPosition(head,55,6);
+    insertAtPosition(head,55,2);
     printList(head);
     cout<<"The Length of List is: "<<length(head)<<endl;
     return 0;
