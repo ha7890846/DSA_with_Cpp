@@ -104,7 +104,7 @@ int main()
     sec->next = third;
     third->next = NULL;
     printList(head);
-    deleteNode(head, 5);
+    deleteNode(head, 4);
     printList(head);
     return 0;
 }
