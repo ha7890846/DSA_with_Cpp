@@ -18,7 +18,19 @@ class Node{
 
   
 
-int main(){
+int main()
+{
+    Node *head = new Node(10);
+    Node *first = new Node(20);
+    Node *sec = new Node(30);
+    Node *third = new Node(40);
 
+    head->next = first;
+    first->next = sec;
+    sec->next = third;
+    // third will be point to any previous node
+    // to make a loop...
+    third->next = first;
+    
     return 0;
 }
