@@ -113,6 +113,7 @@ int main()
     sec->next = third;
     third->next = NULL;
     printList(head);
-    
+    Node* result = segregate(head);
+    printList(result);
     return 0;
 }
