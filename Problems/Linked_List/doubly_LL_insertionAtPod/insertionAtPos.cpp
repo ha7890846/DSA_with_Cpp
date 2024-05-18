@@ -92,7 +92,7 @@ int main()
     sec->prev = first;
 
     printList(head);
-    addNode(head,6,1000);
+    addNode(head,1,1000);
     printList(head);
     return 0;
 }
