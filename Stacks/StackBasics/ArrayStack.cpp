@@ -16,7 +16,7 @@ class ArrayStack{
         if(top == size-1){
             cout<<"Stack is Full"<<endl;
         }
-        elste{
+        else{
             top++;
             arr[top] = data;
         }
