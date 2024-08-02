@@ -2,19 +2,29 @@
 #include<stack>
 using namespace std;
 void sortedStack(stack<int>&s, int &value){
+    // base case....
     if(s.empty()){
         s.push(value);
         return;
     }
     int temp;
+   // CASE: When the top() is greater than the value
+
     if(s.top()> value){
+        //store the top into temp and pop it..
         temp = s.top();
         s.pop();
-    }else{
+    }
+    // CASE: When the value is greater or equal to top
+    else{
+        // Push the value at top and return back recursive stack call...
         s.push(value);
         return;
     }
+    // Recu call.
     sortedStack(s,value);
+    // after the pushing value into stack..
+    // Now push the temp store value into stack in-sequence
     s.push(temp);
     return;
 }
