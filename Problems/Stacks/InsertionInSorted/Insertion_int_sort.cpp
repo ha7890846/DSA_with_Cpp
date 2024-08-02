@@ -48,7 +48,8 @@ int main(){
     cout<<"\nEnter the value that you want: ";
     cin>>value;
     sortedStack(s,value);
+    cout<<"After process the value in stack from Top to Bottom: ";
     printStack(s);
-
+    cout<<endl;
     return 0;
 }
