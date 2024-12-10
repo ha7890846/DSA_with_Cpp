@@ -37,7 +37,7 @@ int main(){
             e--;
         }
     }
-    usingSort(arr);
+    //usingSort(arr);
     cout<<"solved Vector:";
     printVect(arr);
     return 0;
