@@ -1,6 +1,6 @@
-# Problem Statement : Count Digits.
+# Problem Statement : Find Second Largest Element...
 
-Given an array, find the second smallest and second largest element in the array. Print ‘-1’ in the event that either of them doesn’t exist.
+Given an array, Find the second largest element in the array.
 
 ### Examples:
 
@@ -25,8 +25,7 @@ Explanation:  The number Large is 83 and second largest is 73.
 Algorithm:
 
 - Step 1: Sort the array in ascending order
-- Step 2: The element present at the second index is the second smallest element
-- Step 3: The element present at the second index from the end is the second largest element
+- Step 2: The element present at the second index from the end is the second largest element
 
 #### Complexity:
 
