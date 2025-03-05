@@ -1,4 +1,4 @@
-# Problem Statement : Count Digits.
+# Problem Statement : Array is Sorted or Not.
 
 Given an array of size n, write a program to check if the given array is sorted in (ascending / Increasing / Non-decreasing) order or not. If the array is sorted then return True, Else return False.
 
@@ -51,4 +51,4 @@ Algorithm:
 ### Reference:
 
 - GFG Problem -[Click Here](https://www.geeksforgeeks.org/check-if-an-array-is-sorted-or-not/)
-- Source Code -[Click Here]()
+- Source Code -[Click Here](https://github.com/ha7890846/DSA_with_Cpp/tree/main/Problems/Arrays/CheckSorted)
